@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B9A3-Hockeys</title>
+
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.1/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- manrope google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/162fb7355a.js" crossorigin="anonymous"></script>
+
+
+
+<!-- Tailwind Custom Color -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+<style>
+    .font-manrope{
+        font-family: 'Manrope', sans-serif;
+    }
+</style>
+</head>
+<body class="font-manrope flex-col lg:flex-row pr-36 pl-36 mt-13">
+    <header>
+        <nav>
+            <div class="navbar ">
+              <div class="flex-1 ">
+                <div class="dropdown">
+                  <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                  </div>
+                  <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box w-52 text-base">
+                    <li><a><span class="text-[#FF4240]">Home</span> </a></li>
+                    <li><a>Shop </a></li>
+                    <li><a>News </a></li>
+                    <li><a>Contact </a></li>
+                    
+                  </ul>
+                </div>
+                <a class="btn btn-ghost text-xl   lg:text-4xl">Hockey <span class="text-[#FF4240]">'</span>s</a>
+              </div>
+              <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-base">
+                  <li><a><span class="text-[#FF4240]">Home</span> </a></li>
+                  <li><a>About </a></li>
+                  <li><a>Pages </a></li>
+                  <li><a>Blog </a></li>
+                  <li><a>Contact </a></li>
+                </ul>
+              </div>
+              <div class="navbar-end gap-12">
+                <i class="fa-sharp fa-light fa-magnifying-glass"></i>
+                <div>
+                    <a class="btn px-6 py-4  bg-[#FF4240]  text-white">Get Ticket</a>
+                </div>
+              </div>
+            </div>
+        </nav>
+
+           <!-- slider or carousel -->
+        <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute  transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="Images/1.png" class="w-full" />
+              <div class="absolute  transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+            
+         </div>      
+  
+    </header>
+
+    <main class="mt-36">
+        <hr>
+       <section>
+        <div class="text-center">
+            <h2 class="text-5xl font-extrabold mt-10 mb-5">Professional Hockeys Club</h2>
+            <p class="lg:max-w-3xl mb-10 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        </div>
+        <hr>
+       </section>
+
+       <section>
+        <div class="grid grid-cols-1 lg:grid-cols-4 justify-between items-center mx-20 gap-7 mt-16">
+          <!-- 1st raidal progress -->
+          <div class="text-center">
+            <div class="mb-4 radial-progress text-primary text-[#FF4240]" style="--value:87;" role="progressbar">87%</div>
+            <h4 class="mb-4 text-xl font-semibold">Prayer Facility</h4>
+            <p class="font-primary text-base font-medium leading-6">Hockey Stick. Your hockey stick is like your weapon on
+              the battlefield.</p>
+          </div>
+          <!-- 2nd raidal progress -->
+          <div class="text-center">
+            <div class="mb-4 radial-progress text-primary text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+            <h4 class="mb-4 text-xl font-semibold">Experienced Coach</h4>
+            <p class=" font-primary text-base font-medium leading-6">Manage the staff and the players, ensuring the team
+              runs smoothly and performs to the highest standards.</p>
+          </div>
+          <!-- 3rd raidal progress -->
+          <div class="text-center">
+            <div class="mb-4 radial-progress text-primary text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+            <h4 class="mb-4 text-xl font-semibold">Senior Player</h4>
+            <p class="font-primary text-base font-medium leading-6">Sport for all ages, senior hockey generally describes
+              hockey played by anyone over the age of 16.</p>
+          </div>
+          <!-- 4rd raidal progress -->
+          <div class="text-center">
+            <div class="mb-4 radial-progress text-primary text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+            <h4 class="mb-4 text-xl font-semibold">Training Ground</h4>
+            <p class="font-primary text-base font-medium leading-6">We are located at Polo Farm Sports Centre Littlebourne
+              Road, Canterbury CT3 4AF and AW1 is the pitch next to the clubhouse.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+<!-- Program Section -->
+      <section>
+
+      </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
